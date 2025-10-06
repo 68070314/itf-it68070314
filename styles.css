@@ -17,12 +17,16 @@ header {
     padding: 10px 20px;
 }
 
-header h1 {
-    margin: 0;
+.top{
+    background-color: rgb(241, 168, 71);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.container {
-    padding: 20px;
+header h1 {
+    margin: 0;
 }
 
 h2 {
@@ -69,4 +73,13 @@ textarea {
 
 .two-col div {
     width: 48%;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pf-pic img{
+    border: 5px solid black;
 }
