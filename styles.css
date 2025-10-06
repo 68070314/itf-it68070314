@@ -1,23 +1,72 @@
-nav {
-    background-color: yellow;
-    border: 2;
-    border-color: black;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(241, 168, 71);
+    background-image: url(http://getwallpapers.com/wallpaper/full/7/8/8/13225.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
+
+header h1 {
+    margin: 0;
+}
+
 .container {
-    display: grid;
-    grid-template-columns: 30% 30%;
-    border-radius: 65cm;
-    border-color: black;
+    padding: 20px;
 }
-.font {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+h2 {
+    text-align: center;
 }
-body {
-    background-image: url(https://i.pinimg.com/736x/f2/e4/02/f2e40274486451415a72310d2d99e73a.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgb(106, 235, 102);
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.section h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+input, select, button {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.two-col div {
+    width: 48%;
 }

@@ -1,26 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Size preview</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITF Simple Bank</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <p class="font">68070314</p>
-        <h2 class="font">Size Websize</h2>
-        <p class="font">week 14</p>
-    </nav>
+    <header>
+    <div>68070314</div>
+    <h1>ITF Website</h1>
+    <div>Week 14</div>
+    </header>
+
     <div class="container">
+    <h2>ITF Simple Bank</h2>
+    <p>Welcome to my first uhh.. website like website!</p>
+    <textarea id="log" placeholder="Transaction log..."></textarea>
+
+    <div class="content">
+        <div class="section">
+        <h3>Account Overview</h3>
+        <p><b>Account Information</b><br>
+        Name: Sakkarin Kamhaengphon<br>
+        Type: Savings Account</p>
+
+        <p><b>Balance Information</b></p>
         <div>
-            Enter your size: <input type="number" id="size" placeholder="good > 45 > bad">
-            <button onclick="add()">Submit</button>
+            Current account balance: <input type="number" id="accBal" value="0"><br>
+            Current cash balance: <input type="number" id="cashBal" value="0"><br>
+            <button onclick="updateBalances()">Change</button>
+        </div>
+
+        <p><b>Bank Operation</b></p>
+        <div class="two-col">
+        <div>
+            <select id="operation">
+                <option value="deposit">Deposit</option>
+                <option value="withdraw">Withdraw</option>
+            </select>
         </div>
         <div>
-            <img id="pic1" style="display: none;" src="https://i.pinimg.com/736x/b5/4e/6d/b54e6d943b623077a25278abda68664d.jpg" alt="" height="800" width="830">
-            <img id="pic2" style="display: none;" src="https://i.pinimg.com/736x/49/62/ee/4962ee8228258c179a707f7371a08d2b.jpg" alt="" height="800" width="830">
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        </div>
+        <button onclick="processOperation()">Proceed</button>
+    </div>
+
+    <div class="section">
+        <h3>Financial Tools</h3>
+        <p><b>Currency Converter</b></p>
+        <div>
+            <p>current rate $1 = ฿36</p>
+            Input balance: <input type="number" id="inputBal" value="0"><br>
+            Output balance: <input type="number" id="outputBal" value="0" readonly><br>
+            Input currency:
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="THB">THB</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
