@@ -42,7 +42,7 @@ function convertCurrency() {
     const input = parseFloat(document.getElementById('inputBal').value);
     const currency = document.getElementById('currency').value;
     let output = 0;
-  const rate = 36; // Example: 1 USD = 36 THB
+  const rate = 36;
 
 if (isNaN(input) || input <= 0) {
     alert("Enter a valid amount!");
